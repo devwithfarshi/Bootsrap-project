@@ -1,0 +1,42 @@
+.navbar {
+  background: #fff;
+  padding: 1rem;
+  .container {
+    @include df;
+    justify-content: space-between;
+    .logo {
+      cursor: pointer;
+      h1 {
+        font-size: 3rem;
+        color: $a-color;
+        span {
+          color: $praimary-color;
+        }
+      }
+    }
+    .menu_lists {
+      @include df;
+      gap: 1rem;
+      li {
+        a {
+          padding: 1rem;
+          border-radius: 3.3rem;
+          transition: all 0.5s linear;
+          color: $a-color;
+          font-weight: 400;
+          font-size: $font-size;
+          &:hover {
+            opacity: $opacity;
+            background: $praimary-color;
+            color: #000;
+          }
+        }
+      }
+      .sing {
+        @include df;
+        flex-direction: row-reverse;
+        gap: 1rem;
+      }
+    }
+  }
+}

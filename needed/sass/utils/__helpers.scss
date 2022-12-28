@@ -1,0 +1,25 @@
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: $button-bg;
+  background: $button-bg;
+
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-weight: 500;
+  &:hover {
+    background: $button-hover-bg;
+    opacity: $opacity;
+  }
+}
+.heading {
+  font-size: 3rem;
+  color: #f7f7f7;
+  font-weight: 600;
+}
